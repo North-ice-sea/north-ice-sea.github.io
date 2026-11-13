@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Information about a personal rclone setup used to access the owner's own Google Drive from an Ubuntu computer.">
+  <title>Personal rclone Google Drive Setup</title>
+  <style>
+    :root { color-scheme: light; --ink:#172033; --muted:#596579; --line:#dce3ec; --accent:#2457a7; --bg:#f5f7fb; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--bg); color:var(--ink); font:16px/1.65 system-ui,-apple-system,"Segoe UI",sans-serif; }
+    main { width:min(860px, calc(100% - 32px)); margin:48px auto; padding:40px; background:#fff; border:1px solid var(--line); border-radius:16px; }
+    h1 { margin:0 0 8px; font-size:clamp(28px,5vw,38px); line-height:1.2; }
+    h2 { margin:30px 0 8px; font-size:20px; }
+    p { margin:10px 0; }
+    .muted { color:var(--muted); }
+    .tag { display:inline-block; margin:12px 0 18px; padding:4px 10px; border-radius:999px; background:#edf3ff; color:#214f94; font-size:13px; }
+    a { color:var(--accent); }
+    .links { margin-top:28px; padding-top:18px; border-top:1px solid var(--line); }
+    @media (max-width:600px) { main { margin:16px auto; padding:24px; } }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Personal rclone Google Drive Setup</h1>
+    <p class="muted">Project information maintained by <a href="https://github.com/North-ice-sea">North-ice-sea</a>.</p>
+    <span class="tag">Personal-use configuration · Not a public hosted service</span>
+    <h2>What this project does</h2>
+    <p>This project documents a personal installation of <a href="https://rclone.org/">rclone</a>, an open-source command-line file management tool. The owner runs rclone on their own Ubuntu computer and authorizes it with Google OAuth to access their own Google Drive account.</p>
+    <p>The setup can mount a selected Google Drive folder on the owner's computer so local applications can read and write files there. The purpose is personal file access and exchange between the owner's local development tools and Google Drive.</p>
+    <h2>How Google Drive data is used</h2>
+    <p>When the owner runs rclone, Google OAuth asks the owner to grant the permissions shown on Google's consent screen. Depending on the granted permissions and the commands the owner runs, rclone can list, read, download, upload, update, or delete files in Google Drive. The configured Drive access is broad, so the owner should authorize it only for an account they control.</p>
+    <p>File transfers are initiated by the owner from their own computer and take place between that computer and Google Drive through Google's APIs. This GitHub Pages website does not receive or process the owner's Drive file contents.</p>
+    <h2>Who can use it</h2>
+    <p>This is a personal configuration for the repository owner. It is not a multi-user service, does not provide accounts to the public, and is not affiliated with or endorsed by Google.</p>
+    <h2>Privacy</h2>
+    <p>See the <a href="./privacy.html">Privacy Policy</a> for details about Google account data, local token storage, service providers, and data deletion.</p>
+    <div class="links muted">
+      <p>Source repository: <a href="https://github.com/North-ice-sea/north-ice-sea.github.io">GitHub</a></p>
+      <p>Last updated: 14 November 2026</p>
+    </div>
+  </main>
+</body>
+</html>
